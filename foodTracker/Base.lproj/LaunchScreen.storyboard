@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -18,14 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="42" placeholderIntrinsicHeight="21" text="RecipeBox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baN-72-Nth">
-                                <rect key="frame" x="251" y="289" width="99" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*PROTOTYPE*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFy-qM-u3F">
+                                <rect key="frame" x="238" y="466" width="125" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="42" placeholderIntrinsicHeight="21" text="*PROTOTYPE* Copyright 2016 Name TBD *PROTOTYPE*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5e-Ah-MYp">
-                                <rect key="frame" x="79" y="559" width="442" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*PROTOTYPE*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zms-f8-KA1">
+                                <rect key="frame" x="238" y="559" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright 2016 John Williams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R45-ZM-GTw">
+                                <rect key="frame" x="180" y="509" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="42" placeholderIntrinsicHeight="21" text="RecipeBox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baN-72-Nth">
+                                <rect key="frame" x="251" y="289" width="99" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -33,14 +45,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Zms-f8-KA1" firstAttribute="top" secondItem="R45-ZM-GTw" secondAttribute="bottom" constant="29" id="0rf-PT-xxp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="R45-ZM-GTw" secondAttribute="trailing" constant="160" id="1E3-fD-4kq"/>
                             <constraint firstItem="baN-72-Nth" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="269" id="1f8-La-27d"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="o5e-Ah-MYp" secondAttribute="bottom" constant="20" id="DOh-pl-2Lz"/>
+                            <constraint firstItem="R45-ZM-GTw" firstAttribute="top" secondItem="AFy-qM-u3F" secondAttribute="bottom" constant="22" id="BWP-Oc-nhN"/>
+                            <constraint firstItem="Zms-f8-KA1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="218" id="GX3-A3-NhI"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Zms-f8-KA1" secondAttribute="bottom" constant="20" id="Lmm-WB-wuy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="baN-72-Nth" secondAttribute="trailing" constant="230" id="N4i-JA-AcR"/>
-                            <constraint firstItem="o5e-Ah-MYp" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="59" id="Ot7-70-dVe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AFy-qM-u3F" secondAttribute="trailing" constant="217" id="R6g-Dv-7Ue"/>
                             <constraint firstItem="baN-72-Nth" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="231" id="Rgw-wF-UL3"/>
-                            <constraint firstItem="o5e-Ah-MYp" firstAttribute="top" secondItem="baN-72-Nth" secondAttribute="bottom" constant="249" id="TxQ-uS-z9y"/>
-                            <constraint firstItem="o5e-Ah-MYp" firstAttribute="top" secondItem="baN-72-Nth" secondAttribute="bottom" constant="249" id="Zoy-ub-qEL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="o5e-Ah-MYp" secondAttribute="trailing" constant="59" id="hLI-JQ-1gK"/>
+                            <constraint firstItem="Zms-f8-KA1" firstAttribute="top" secondItem="R45-ZM-GTw" secondAttribute="bottom" constant="29" id="c95-bB-EQn"/>
+                            <constraint firstItem="AFy-qM-u3F" firstAttribute="top" secondItem="baN-72-Nth" secondAttribute="bottom" constant="156" id="cBq-pW-Kk1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zms-f8-KA1" secondAttribute="trailing" constant="217" id="cva-NS-DsA"/>
+                            <constraint firstItem="R45-ZM-GTw" firstAttribute="top" secondItem="AFy-qM-u3F" secondAttribute="bottom" constant="22" id="fhn-4X-YdG"/>
+                            <constraint firstItem="R45-ZM-GTw" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="160" id="heV-U5-Oyv"/>
+                            <constraint firstItem="AFy-qM-u3F" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="218" id="mXG-gj-i9K"/>
                         </constraints>
                     </view>
                 </viewController>
