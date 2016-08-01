@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 
 class recipe {
-    struct ingredient {
+    struct Ingredient {
         var name: String
         var unit: String
         var quanity: Float32
@@ -22,7 +22,7 @@ class recipe {
     }
     
     //list of ingredients
-    var ingredientList: [ingredient] = []
+    var ingredientList: [Ingredient] = []
     
     /*
      Function: createIngredient
@@ -33,8 +33,8 @@ class recipe {
      Pre: none
      Post: ingredient created
     */
-    func createIngredient(theName: String, theUnit: String, theQuanity: Float32, theCatagory: String, theDirections: String) -> ingredient{
-        var theIngredient: ingredient = ingredient()
+    func createIngredient(theName: String, theUnit: String, theQuanity: Float32, theCatagory: String, theDirections: String) -> Ingredient{
+        var theIngredient: Ingredient = Ingredient()
         theIngredient.name = theName
         theIngredient.unit = theUnit
         theIngredient.quanity = theQuanity
@@ -50,7 +50,33 @@ class recipe {
      Post: adds target (the ingredient) into the list
     */
     
-    func addToList(target: ingredient){
+    func addToList(target: Ingredient){
         ingredientList.append(target)
+    }
+    
+    /*
+     Function changeIngredient
+     Parameters:
+     Purpose:
+     Pre: ingredient to be changed is present
+     Post: the ingredient is changed
+    */
+    func changeIngredient(nameOfChange: String, newName: String, newUnit: String, newQuanity: Float32) -> Void{
+        //var i = 0;i<3;i+=1
+        var i = 0
+        while (i<3){
+            if((ingredientList[i].name)==(nameOfChange)){
+                if newName != "" {
+                    ingredientList[i].name = newName
+                }
+                if newUnit != "" {
+                    ingredientList[i].unit = newUnit
+                }
+                if newQuanity != -1 {
+                    ingredientList[i].quanity = newQuanity
+            }
+            }
+            i=i+1
+        }
     }
 }
